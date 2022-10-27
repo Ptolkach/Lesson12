@@ -10,7 +10,6 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите величину радиуса, координаты точки (x,y), координаты центра окружности (x0,y0)");
             double r = Convert.ToDouble(Console.ReadLine());
             double x = Convert.ToDouble(Console.ReadLine());
             double y = Convert.ToDouble(Console.ReadLine());
@@ -19,7 +18,6 @@ namespace Task1
 
             double longCircle = Circle.GetLong(r);
             double square = Circle.GetSquare(r);
-            string conf = Circle.GetConfirm(r, x, y,x0,y0);
 
             Console.WriteLine($"Длина окружности: {longCircle:f2}\nПлощадь круга: {square:f2}\nПринадлженость точки: {conf}");
             Console.ReadLine();
