@@ -16,7 +16,9 @@ namespace Task1
         {
             return r * r * Math.PI;
         }
+        static public string GetConf(double r, double x, double y,double x0=0,double y0=0)
         {
+            if (Math.Pow((x - x0), 2) + Math.Pow((y - y0), 2) <= (r * r))
             {
                 return "принадлежит кругу";
             }
@@ -24,6 +26,7 @@ namespace Task1
             {
                 return "не принадлежит кругу";
             }
+
         }
     }
 }
